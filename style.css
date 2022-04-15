@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #2c2c2c;
+    padding: 20px;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.header a {
+    text-decoration: none;
+    line-height: 10px;
+}
+
+.logo, #warning {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ee1e75;
+}
+
+#warning {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    background-color: #f7f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainVideo {
+    width: 100%;
+
+}
+
+.main {
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.main:hover .controls {
+    transform: translateY(0); 
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.buttons button:before {
+    content: '>';
+    width: 30px;
+    height: 30px;
+    border: solid #ffffff 2px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.buttons button.play:before {
+    content: '>';
+}
+
+.buttons button.pause:before {
+    content: 'll';
+}
+
+.progress {
+    height: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+}
+
+.bar {
+    height: 10px;
+    background-color: #ee1e75;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

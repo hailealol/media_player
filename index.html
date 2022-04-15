@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://webgazer.cs.brown.edu/webgazer.js?" defer></script>
+    <script src="script.js" defer></script>
+    <title>Media Player</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">Media Player</a>
+        <a href="index.html"><h3 id="warning">work training</h3></a>
+    </div>
+    <div class="container">
+        <div class="main">
+            <video class="mainVideo" id="mVideo" onended="run()">
+                <source src="videos/video1.mp4" type="video/mp4" />
+                <source src="videos/video2.mp4" type="video/mp4" />
+                <source src="videos/video3.mp4" type="video/mp4" />
+            </video>
+            <div class="controls">
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+                <div class="buttons">
+                    <button id="play-pause"></button>
+                </div>
+            </div>
+            <h2 id="title"></h2>
+        </div>
+    </div>
+</body>
+</html>
